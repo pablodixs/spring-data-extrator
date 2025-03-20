@@ -13,9 +13,9 @@ public class CorsConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/upload") // Endpoint específico
-                        .allowedOrigins("http://localhost:3000") // Origem permitida
-                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS"); // Métodos permitidos
+                registry.addMapping("/api/upload")
+                        .allowedOrigins("http://localhost:3000")
+                        .allowedMethods("POST");
             }
         };
     }

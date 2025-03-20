@@ -23,7 +23,7 @@ public class DataExtratorApplication {
 		if (Desktop.isDesktopSupported()) {
 			new Thread(() -> {
 				try {
-					Thread.sleep(2000); // Aguarda 2 segundos para garantir que o servidor subiu
+					Thread.sleep(2000);
 					Desktop.getDesktop().browse(URI.create(url));
 				} catch (IOException | InterruptedException e) {
 					e.printStackTrace();
